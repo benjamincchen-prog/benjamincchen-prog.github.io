@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>甜蜜蛋糕屋</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('https://imgs.699pic.com/images/501/235/231.jpg!list1x.v2') no-repeat center center fixed;
+            background-size: cover;
+            color: #a0522d;
+            font-family: 'Pacifico', cursive, '微軟正黑體', sans-serif;
+            margin: 0;
+            min-height: 100vh;
+        }
+        /* 增加半透明遮罩讓內容更清晰 */
+        .overlay {
+            background: rgba(255, 229, 236, 0.85);
+            min-height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0; left: 0;
+            z-index: 0;
+        }
+        header, .cake-list {
+            position: relative;
+            z-index: 1;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 20px 0;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 0 2px 8px #fff;
+            letter-spacing: 2px;
+        }
+        .cake-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+            padding: 40px 0;
+        }
+        .cake-item {
+            background: #fff8fa;
+            border-radius: 24px;
+            box-shadow: 0 4px 24px #ffc2d1;
+            width: 260px;
+            text-align: center;
+            padding: 24px 16px 16px 16px;
+            transition: transform 0.2s;
+        }
+        .cake-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 32px #ffb3c6;
+        }
+        .cake-img {
+            width: 220px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 12px #ffc2d1;
+        }
+        .cake-name {
+            font-size: 1.4em;
+            margin: 0 0 8px 0;
+            font-family: 'Pacifico', cursive;
+        }
+        .cake-desc {
+            font-size: 1em;
+            color: #a0522d;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <h1>甜蜜蛋糕屋</h1>
+        <p>精選各式蛋糕，讓幸福在舌尖綻放！</p>
+    </header>
+    <section class="cake-list">
+        <div class="cake-item">
+            <img class="cake-img" src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=600&q=80" alt="草莓蛋糕">
+            <div class="cake-name">草莓鮮奶蛋糕</div>
+            <div class="cake-desc">新鮮草莓搭配柔軟蛋糕體，甜而不膩。</div>
+        </div>
+        <div class="cake-item">
+            <img class="cake-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="巧克力蛋糕">
+            <div class="cake-name">濃郁巧克力蛋糕</div>
+            <div class="cake-desc">香濃巧克力層層堆疊，入口即化。</div>
+        </div>
+        <div class="cake-item">
+            <img class="cake-img" src="https://images.unsplash.com/photo-1505250461400-205f1024736e?auto=format&fit=crop&w=600&q=80" alt="檸檬蛋糕">
+            <div class="cake-name">清新檸檬蛋糕</div>
+            <div class="cake-desc">酸甜檸檬香氣，夏日首選。</div>
+        </div>
+        <div class="cake-item">
+            <img class="cake-img" src="https://images.unsplash.com/photo-1464347744102-11db6282f854?auto=format&fit=crop&w=600&q=80" alt="藍莓乳酪蛋糕">
+            <div class="cake-name">藍莓乳酪蛋糕</div>
+            <div class="cake-desc">濃郁乳酪配上新鮮藍莓，滑順口感。</div>
+        </div>
+        <div class="cake-item">
+            <img class="cake-img" src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" alt="紅絲絨蛋糕">
+            <div class="cake-name">紅絲絨蛋糕</div>
+            <div class="cake-desc">經典紅絲絨，細緻綿密。</div>
+        </div>
+    </section>
+</body>
+</html>
