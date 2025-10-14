@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>三個並排區塊</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .block {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 16px;
+            width: 300px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        .block img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 16px;
+            border-radius: 8px;
+        }
+        .block .text {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <img src="ocean.jpg" alt="圖片1">
+            <div class="text">
+                <h3>海洋</h3>
+                <p>70%地球</p>
+            </div>
+        </div>
+        <div class="block">
+            <img src="forrest.jpg" alt="圖片2">
+            <div class="text">
+                <h3>森林</h3>
+                <p>30%地球</p>
+            </div>
+        </div>
+        <div class="block">
+            <img src="sky.jpg" alt="圖片3">
+            <div class="text">
+                <h3>天空</h3>
+                <p>100%地球</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
